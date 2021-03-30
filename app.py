@@ -17,12 +17,17 @@ def home_page():
 
 @app.route('/start')
 def question():
-    return render_template('/question/0.html',survey=survey)
+    return render_template('/question1.html',survey=survey)
+
+@app.route('/question2')
+def question2():
+    return render_template('/question3.html',survey=survey)
+    
 
 
 
 
-
+# ,'/question2.html','/question3.html','question4.html'
 
 
 
