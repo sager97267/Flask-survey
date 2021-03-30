@@ -17,7 +17,9 @@ def home_page():
 
 @app.route('/start')
 def question():
-    return render_template('question.html')
+    return render_template('/question/0.html',survey=survey)
+
+
 
 
 
