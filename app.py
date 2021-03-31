@@ -9,7 +9,7 @@ app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
 
 debug=DebugToolbarExtension(app)
 
-@app.route('/home')
+@app.route('/')
 # creating home page route for survey
 def home_page():
     
@@ -17,11 +17,22 @@ def home_page():
 
 @app.route('/start')
 def question():
-    return render_template('/question1.html',survey=survey)
+    return render_template('question1.html',survey=survey)
 
 @app.route('/question2')
 def question2():
-    return render_template('/question3.html',survey=survey)
+    return render_template('question2.html',survey=survey)
+
+app.route('/question3')
+def question3():
+    return render_template('question3.html',survey=survey)
+
+app.route('/question4')
+def question4():
+    return render_template('question4.html',survey=survey)
+# @app.route('/question2')
+# def question2():
+#     return render_template('/question3.html',survey=survey)
     
 
 
