@@ -1,11 +1,11 @@
 {%extends 'base.html'%} {%block content%}
 <h1>Question 4</h1>
-
-<form action="" methods="POST">
-  <input type="radio" name="yes" value="yes" />
+<p>{{survey.questions[3].question}}</p>
+<form action="/compleat">
+  <input type="radio" name="awnser" value="yes" />
   <label for="yes">Yes</label>
 
-  <input type="radio" name="no" value="no" />
+  <input type="radio" name="awnser" value="no" />
   <label for="yes">No</label>
   <button>Submit</button>
 </form>
