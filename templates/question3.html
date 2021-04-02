@@ -3,10 +3,10 @@
 <p>{{survey.questions[2].question}}</p>
 <form action="/question4" methods="POST">
   <input type="radio" name="awnser" value="less" />
-  <label for="less">{{survey.questions[2].question.choices[0]}}</label>
+  <label for="less">{{survey.questions[2].choices[0]}}</label>
 
   <input type="radio" name="awnser" value="more" />
-  <label for="more">{{survey.questions[2].question.choices[1]}}</label>
+  <label for="more">{{survey.questions[2].choices[1]}}</label>
   <button>Submit</button>
 </form>
 
